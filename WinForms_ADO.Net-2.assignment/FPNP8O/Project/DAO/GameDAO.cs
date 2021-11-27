@@ -8,7 +8,5 @@ namespace Project.DAO
         bool AddGame(Game game);
         bool ModifyGame(Game game);
         IEnumerable<Game> GetGames();
-        Game GetGame(int gameId);
-        int GamesCount();
     }
 }

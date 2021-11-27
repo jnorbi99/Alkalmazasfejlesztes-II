@@ -45,16 +45,6 @@ namespace Project.DAO
             return ret;
         }
 
-        public int GamesCount()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Game GetGame(int gameId)
-        {
-            throw new NotImplementedException();
-        }
-
         public IEnumerable<Game> GetGames()
         {
             List<Game> games = new List<Game>();

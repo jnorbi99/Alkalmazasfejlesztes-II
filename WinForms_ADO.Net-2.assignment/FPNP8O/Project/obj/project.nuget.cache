@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "+IiFN+ys4ftL8aIaD16BR5I9u6snLcs1vhDEl9wNp4YJCmNRGRwxApX6CvT3QiP779oPHUxdC1tP08QrDvepiw==",
+  "success": true,
+  "projectFilePath": "C:\\Norbi\\Alkfejl2\\Alkfejl-II\\WinForms_ADO.Net-2.assignment\\FPNP8O\\Project\\Project.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jnorb\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.115.5\\stub.system.data.sqlite.core.netstandard.1.0.115.5.nupkg.sha512",
+    "C:\\Users\\jnorb\\.nuget\\packages\\system.data.sqlite.core\\1.0.115.5\\system.data.sqlite.core.1.0.115.5.nupkg.sha512"
+  ],
+  "logs": []
+}

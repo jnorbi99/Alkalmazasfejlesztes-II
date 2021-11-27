@@ -30,15 +30,5 @@ namespace Project.Controller
         {
             return dao.GetGames();
         }
-
-        public Game GetGame(int gameId)
-        {
-            return dao.GetGame(gameId);
-        }
-
-        public int GamesCount()
-        {
-            return dao.GamesCount();
-        }
     }
 }
