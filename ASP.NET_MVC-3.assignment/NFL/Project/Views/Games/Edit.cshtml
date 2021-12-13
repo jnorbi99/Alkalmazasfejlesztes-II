@@ -1,0 +1,69 @@
+﻿@model Project.Models.Game
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Game</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label asp-for="HomeClubName" class="control-label"></label>
+                <input asp-for="HomeClubName" class="form-control" readonly/>
+                <span asp-validation-for="HomeClubName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AwayClubName" class="control-label"></label>
+                <input asp-for="AwayClubName" class="form-control" readonly/>
+                <span asp-validation-for="AwayClubName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HomeFinalScore" class="control-label"></label>
+                <input asp-for="HomeFinalScore" class="form-control"  min="0"/>
+                <span asp-validation-for="HomeFinalScore" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AwayFinalScore" class="control-label"></label>
+                <input asp-for="AwayFinalScore" class="form-control"  min="0"/>
+                <span asp-validation-for="AwayFinalScore" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HomeNumberOfTD" class="control-label"></label>
+                <input asp-for="HomeNumberOfTD" class="form-control" min="0"/>
+                <span asp-validation-for="HomeNumberOfTD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AwayNumberOfTD" class="control-label"></label>
+                <input asp-for="AwayNumberOfTD" class="form-control"  min="0"/>
+                <span asp-validation-for="AwayNumberOfTD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Week" class="control-label"></label>
+                <input asp-for="Week" class="form-control" readonly/>
+                <span asp-validation-for="Week" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Year" class="control-label"></label>
+                <input asp-for="Year" class="form-control" readonly/>
+                <span asp-validation-for="Year" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
